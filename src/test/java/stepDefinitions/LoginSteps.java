@@ -22,14 +22,14 @@ public class LoginSteps {
     public void user_enters_valid_credentials() throws InterruptedException {
         driver.findElement(By.id("username")).sendKeys("AAG113");
         driver.findElement(By.id("password")).sendKeys("Sravani@08");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 
     //@When("I entered invalid username and password for navigate login page")
     public void user_enters_invalid_credentials() throws InterruptedException {
         driver.findElement(By.id("username")).sendKeys("AAG9077701");
         driver.findElement(By.id("password")).sendKeys("Pass@1234");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 
     @When("I clicked on the login button for navigate login page")
